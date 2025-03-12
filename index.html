@@ -15,7 +15,8 @@
     <!-- Responsive Navbar -->
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -31,9 +32,25 @@
                 <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
             </li>
         </ul>
-
-
     </nav>
+
+    <!--Side Navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top=0 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600 ">
+            <li>
+                <a class="hover:underline hover:text-black" href="">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
 
     <!--Header Section-->
 
@@ -51,11 +68,12 @@
 
     </section>
 
-    <p class="p-3 m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita soluta atque consequuntur earum
+    <p class="p-3 m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita soluta atque
+        consequuntur earum
         laboriosam id a iusto illo molestias aut autem laborum quis ratione similique, reprehenderit accusantium
         blanditiis perferendis tempore deserunt officia. At aut, obcaecati vel saepe quos veritatis ex iste commodi
         minima ducimus soluta consequatur? Blanditiis, et, quisquam veniam ut corrupti illum tempora dolore hic laborum
-         Corrupti impedit hic culpa beatae, quae enim! Animi praesentium, autem ab iure quos,
+        Corrupti impedit hic culpa beatae, quae enim! Animi praesentium, autem ab iure quos,
         ime maiores dolor, quae sint delectus numquam sit dicta magnam culpa quas voluptatem! Consequatur iste
         erat veritatis dolore soluta corrupti ratione molestiae mollitia, non tempore veniam voluptate
         quae id. Aut, nemo animi. Quo tempore harum quasi omnis magni minus, molestias tempora numquam inventore laborum
@@ -141,22 +159,22 @@
         <div class="grid grid-cols-2 md:grid-cols-4">
             <div>
                 <img src="./images/potimage_1.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <h1>Indoor Plant1</h1>
+                <h1>Lily Plant</h1>
                 <p>20$</p>
             </div>
             <div>
                 <img src="./images/potimage_2.png" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <h1>Indoor Plant2</h1>
+                <h1>Wild Plant</h1>
                 <p>20$</p>
             </div>
             <div>
                 <img src="./images/potimage_3.png" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
-                <h1>Indoor Plant3</h1>
+                <h1>Spider Plant</h1>
                 <p>20$</p>
             </div>
             <div>
                 <img src="./images/potimage_4.png" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
-                <h1>Indoor Plant4</h1>
+                <h1>Snake Plant</h1>
                 <p>20$</p>
             </div>
         </div>
@@ -206,6 +224,10 @@
             officia minima adipisci consequuntur consequatur.</p>
         <p>@2025 Greenday.com</p>
     </section>
+
+    <script src="index.js">
+
+    </script>
 </body>
 
 </html>
